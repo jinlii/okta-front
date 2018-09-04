@@ -1,0 +1,5 @@
+Ui:
+<button *ngIf="!isAuthenticated" (click)="login()"> Login </button>
+<button *ngIf="isAuthenticated" (click)="logout()"> Logout </button>
+<message-list *ngIf="isAuthenticated"></message-list>
+<router-outlet></router-outlet>
